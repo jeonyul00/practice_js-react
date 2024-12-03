@@ -1,1 +1,1 @@
-# practice_js-react
+js && react 정리
