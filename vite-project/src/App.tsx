@@ -1,19 +1,13 @@
 import "./App.css";
 import React from "react";
+import Arr from "./Arr";
 
 function App(): JSX.Element {
-  const [count, setCount] = React.useState<number>(0);
-
-  const add: () => void = React.useCallback(() => {
-    setCount((prevCount) => prevCount + 1);
-  }, []);
-
-  React.useEffect(() => {
-    const timer = setTimeout(() => add(), 1000);
-    return () => clearTimeout(timer);
-  }, [count, add]);
-
-  return <>{count}</>;
+  return (
+    <>
+      <Arr />
+    </>
+  );
 }
 
 export default App;
